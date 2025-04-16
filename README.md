@@ -1,6 +1,6 @@
 # Fotoaufnahme-Anwendung
 
-Diese Webseite ist eine simple Anwendung von der Benutzung [`react-webcam`]("https://www.npmjs.com/package/react-webcam"), [`tailwindcss`]("https://tailwindcss.com/"), [`prettier`]("https://prettier.io/").
+Diese Webseite ist eine simple Anwendung von der Benutzung [`react-webcam`](https://www.npmjs.com/package/react-webcam), [`tailwindcss`](https://tailwindcss.com/), [`prettier`](https://prettier.io/).
 
 ## Inhaltsverzeichnis 
 * [Bedarf](#bedarf)
