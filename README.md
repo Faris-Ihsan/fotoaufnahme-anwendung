@@ -1,12 +1,29 @@
-# React + Vite
+# Fotoaufnahme-Anwendung
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Diese Webseite ist eine simple Anwendung von der Benutzung [`react-webcam`]("https://www.npmjs.com/package/react-webcam"), [`tailwindcss`]("https://tailwindcss.com/"), [`prettier`]("https://prettier.io/").
 
-Currently, two official plugins are available:
+## Inhaltsverzeichnis 
+* [Bedarf](#bedarf)
+* [Installation](#installation)
+* [Nutzung der Anwendung](#nutzung-der-anwendung)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Bedarf
+* [NPM/Node.Js](https://nodejs.org/en)
 
-## Expanding the ESLint configuration
+## Installation
+Sie können zuerst Vite von Command Line installieren.
+```bash
+npm install
+```
+Wenn Sie diese Anwendung laufen werden, können Sie diese Code schreiben.
+```bash
+npm run dev
+```
+Die Live-Vorchau der Webseite wird in [http://localhost:5173/](http://localhost:5173/) angezeigt.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Nutzung der Anwendung
+1. Anclicken Sie den "Capture" Knopf <br>
+   <img src="https://github.com/user-attachments/assets/3bb56f3c-018c-4631-9a6d-e282b36ff44a" width="600">
+2. Das Foto wird neben dem Live-Vorschau der Kamera angezeigt. <br>
+   <img src="https://github.com/user-attachments/assets/712fbe25-fb78-43aa-bdd1-ee574eb85afd" width="600">
