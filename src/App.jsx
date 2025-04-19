@@ -3,11 +3,17 @@ import Webcam from "react-webcam";
 
 function App() {
     const webcamRef = useRef(null);
+
+    // Add Variable to Component
     const [imageSrc, setImgSrc] = useState(null);
+
+    // Set Video Value
     const videoConstraints = {
         width: 480,
         height: 360,
     };
+
+    // Share variable between function/ Component
     const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
         setImgSrc(imageSrc);
@@ -25,14 +31,19 @@ function App() {
                     <h1 className={"text-xl"}>Fotoaufname</h1>
                     </div>
                     <div className={"leading-relaxed p-4 "}>
+                        {/* For Webcam Use */}
                         <Webcam ref={webcamRef} videoConstraints={videoConstraints} screenshotFormat="image/jpeg" />
                     </div>
-                    <div className="bg-slate-50 flex justify-center p-4">
+                    {/* Geschweifteklamme => ""
+                        Gänzefüsschen => {}
+                    */}
+                    <div className={"bg-slate-50 flex justify-center p-4"}>
                     <button className={"bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-blue-400"} onClick={capture}>Capture</button>
                     </div>
                 </div>
                 <div className={"shadow rounded-lg overflow-hidden bg-white"}>
                     <div className={"leading-relaxed p-4 "}>
+                        {/* Show captured images */}
                         <img className={"w-md"} src={imageSrc} alt="capture" />
                     </div>
                 </div>
