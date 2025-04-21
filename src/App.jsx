@@ -81,11 +81,11 @@ function App() {
                         approx.delete();
                     }
                 }
-
-                // rotes Rechteck zeichnen
+                
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
+                // rotes Rechteck zeichnen
                 if (bestContour) {
                     ctx.beginPath();
                     ctx.strokeStyle = "red";
@@ -144,6 +144,7 @@ function App() {
                     <div className={"leading-relaxed p-4 "}>
                         {/* For Webcam Use */}
                         <Webcam ref={webcamRef} videoConstraints={videoConstraints} mirrored="false" screenshotFormat="image/jpeg" />
+                        <canvas ref={canvasRef} width={videoConstraints.width} height={videoConstraints.height}></canvas>
                     </div>
                     {/* Geschweifteklamme => ""
                         Gänzefüsschen => {}
@@ -156,7 +157,6 @@ function App() {
                     <div className={"leading-relaxed p-4 "}>
                         {/* Show captured images */}
                         <img className={"w-md"} src={imageSrc} alt="capture" />
-                        <canvas ref={canvasRef} width={videoConstraints.width} height={videoConstraints.height}></canvas>
                     </div>
                 </div>
             </div>
